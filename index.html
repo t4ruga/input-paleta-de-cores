@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 0, 0);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="valor">valor</label>
+    <input type="text">
+
+    <br><br>
+
+    <button onclick="adicionarvalorfinal">adicionar valor final</button>
+
+    <br><br>
+
+    <button onclick="adicionarvalorinicial">adicionar valor inicial</button>
+
+    <br><br>
+
+    <button onclick="adicionarvalorultimo">adicionar ultimo valor</button>
+
+    <br><br>
+
+    <button onclick="adicionarvalorprimeiro">adicionar primeiro valor</button>
+
+
+
+    <script>
+
+        // Criando um Vetor
+        const cores = [];
+
+        // Inserindo valor a um vetor por Posição/Index
+        cores[0] = 'vermelho';
+        cores[1] = 'verde';
+        cores[2] = 'azul';
+
+        // Imprimindo o vetor
+        console.log(cores);
+
+        // Imprimindo o valor em forma de String
+        console.log(cores.toString());
+
+        // Imprimindo o tamanho do Vetor
+        console.log(cores.length);
+
+
+        // Manipulando vetores
+
+        // Inserindo um novo registro no final do Array
+        cores.push('laranja');
+        console.log(cores.toString());
+
+        // Inserir um novo registro no início do Array
+        cores.unshift('roxo');
+        console.log(cores.toString());
+
+        // Remover o último elemento
+        cores.pop();
+        console.log(cores.toString);
+
+        // Remover o primeiro elemento
+        cores.shift();
+        console.log(cores.toString());
+
+
+
+        cores.push('roxo');
+        console.log(cores.toString());
+
+        cores.unshift('verde');
+        console.log(cores.toString());
+
+
+
+
+
+    </script>
+</body>
+
+</html>
